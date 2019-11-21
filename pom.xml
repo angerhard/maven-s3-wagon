@@ -1,6 +1,7 @@
 <!--
     Copyright 2010-2015 The Kuali Foundation
     Copyright 2018 Sean Hennessey
+    Copyright 2019 Andreas Gerhard
 
     Licensed under the Educational Community License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -17,7 +18,7 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.github.nodely</groupId>
+  <groupId>de.andreasgerhard</groupId>
   <artifactId>maven-s3-wagon</artifactId>
   <version>1.0.0</version>
   <name>Maven S3 Wagon</name>
@@ -25,9 +26,9 @@
   <description>
     This project is an implementation of a multi-threaded Wagon provider for accessing Amazon's Simple Storage Service (S3).
     It enables Maven to download files from and deploy files to S3. 
-    It draws heavily from code developed by Jeff Caddel at Kuali and Ben Hale at SpringSource
+    I forked the code from github.com/nodely.
   </description>
-	<url>https://github.com/seahen/maven-s3-wagon</url>
+	<url>https://github.com/angerhard/maven-s3-wagon</url>
 	<properties>
 		<project.scm.vendor>git</project.scm.vendor>
 		<project.java.version>11</project.java.version>
@@ -129,8 +130,8 @@
 		</dependency>
 	</dependencies>
 	<scm>
-		<connection>scm:git:https://github.com/Nodely/maven-s3-wagon.git</connection>
-		<url>https://github.com/Nodely/maven-s3-wagon</url>
+		<connection>scm:git:https://github.com/angerhard/maven-s3-wagon.git</connection>
+		<url>https://github.com/angerhard/maven-s3-wagon</url>
 	</scm>
 	<licenses>
 		<license>
@@ -157,6 +158,11 @@
 			<email>jcaddel@kuali.org</email>
 			<organization>rSmart</organization>
 			<timezone>-7</timezone>
+		</developer>
+		<developer>
+			<id>angerhard</id>
+			<name>Andreas Gerhard</name>
+			<url>https://github.com/angerhard</url>
 		</developer>
 	</developers>
 
